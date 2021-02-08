@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .conter {
+            width: 800px;
+            height: 400px;
+            background-color: aquamarine;
+
+            display: grid;
+
+            grid-template-columns: 240px auto;
+            grid-template-rows: 100 200 1fr;
+
+            grid-template-areas:
+                "header header"
+                "menu content"
+                "footer footer"
+            ;
+            gap: 5px;
+
+        }
+
+        .autobg1 {
+            grid-area: header;
+            background-color: blue;
+        }
+
+        .autobg2 {
+            grid-area: menu;
+            background-color: chartreuse;
+        }
+
+        .autobg3 {
+            grid-area: content;
+            background-color: coral;
+        }
+
+        .autobg4 {
+            grid-area: footer;
+            background-color: darkseagreen;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="conter">
+        <div class="autobg1">box1</div>
+        <div class="autobg2">box2</div>
+        <div class="autobg3">box3</div>
+        <div class="autobg4">box4</div>
+    </div>
+</body>
+
+</html>
